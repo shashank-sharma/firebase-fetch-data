@@ -3,7 +3,7 @@ var server  = http.createServer();
 var port    = process.env.PORT || 9001;
 
 var admin = require("firebase-admin");
-var serviceAccount = 'JSON_FILE_FOR_AUTHENTICATION'					// Repalce this
+var serviceAccount = 'JSON_FILE_FOR_AUTHENTICATION'					// Replace this
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
